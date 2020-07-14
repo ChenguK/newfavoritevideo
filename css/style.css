@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    flex-grow: 1;
+
+}
+
+img {
+    max-width: 90px;
+}
+
