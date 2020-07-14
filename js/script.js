@@ -1,41 +1,73 @@
+const baseUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q='
 let videoData, userInput;
 
-const $title = $("#title");
-const $channel = $("#channel");
-const $description = $("#description");
-const $imgEL = $('.modal-content img');
-const $video = $(`.video-container`);
+const $ul  = $('.collection');
+const $title = $('#title');
+const $channel = $('#channel');
+const $description = $('#description');
+const $img = $('img');
+const $video = $('.modal-content .video-container');
+const $input = $("input[type='text']");
+const $modal = $('.modal');
 
+$ul.on('click', 'img', handleClick);
 
-const $input = $("input[type='text']")
+$modal.modal();
+    const instance = M.Modal.getInstance($modal);
 
-$("form").on("submit", handleGetVideos);
-function handleGetVideos(evt) {
-	event.preventDefault();
+function handleClick(evt) {
+        getVideos(evt.target.dataset.url, true); 
+    }
+
+$("form").on("submit", getVideos);
+function getVideos(evt) {
 
     userInput = $input.val();
     $.ajax({
-		url:"https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q="  + userInput + "&type=video&key=AIzaSyCyjIEINcYhAUJF5j_pj27vzXz9RhthDg8"
-	}).then(
+        url:baseUrl  + userInput + `&type=video&key=${config.API_KEY1}` 
+        // `${config.API_KEY1}`	
+    }).then(
         (data)=> { 
-            console.log("DATA IS ", data)
-			// movieData = data;
+            videoData = data.items;
+            console.log("DATA IS ", data.items)
 			render();
         }, 
         (error) => { 
+
             console.log("ERROR IS ", error)
         })
 }
 
+function generateHTml() { 
+    return videoData.map(function(v) {
+        return `
+        <li class="collection-item"><div>${v.snippet.title}<a href="#!" class="secondary-content blue-text"><i class="material-icons"><img src=${v.snippet.thumbnails.medium.url} 'data-target="modal1" class="btn modal-trigger'alt="Video Thumbnail"></i></a><br>${v.snippet.channel}
+        </div>
+        </li>`
+    })
+}
+{/* <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a> */}
+// 'data-target="modal1" class="btn modal-trigger'
+
 function render() {
-    $title.html(videoData.items[i].snippet.title);
-    $channel.html(videoData.items[i].snippet.channelTitle);
-    $description.html(videoData.items[i].snippet.description);
-    $('img').attr('src', videoData.items[i].snippet.thumbnails.default.url); 
-    $video.attr('src', videoData.items[i].id.videoId);
+    const html = generateHTml().join("");
+    $('h4').html('Results for ' + userInput )
+    $ul.html(html);
+    // for(let i = 0; i < videoData.items.length; i++) { 
+    $title.html(videoData.snippet.title);
+        // console.log(videoData.items[i].snippet.title);
+    $channel.html(videoData.snippet.channelTitle);
+    $description.html(videoData.snippet.description);
+    // $img.attr('src', videoData.thumbnails.medium.url); 
+    $video.attr(`https://www.youtube.com/watch?v=` + videoData.id.videoId);
+    instance.open();
 }
 
 function submitForm() {
     $('form[name="contact-form"]').submit();
-    $('input[type="text"], textarea').val('');
+    $('input[type="text"], textarea').val("");
   }
+
+  
+
+//   append(`<>`)
