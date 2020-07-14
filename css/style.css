@@ -1,13 +1,28 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box;   
 }
 
 main {
+    height: 100vh;
     flex-grow: 1;
 
 }
 
 img {
-    max-width: 90px;
+    max-width: 140px;
 }
 
+.brand-logo {
+    margin-right: 20px;
+}
+
+form {
+    margin-top: 70px;
+}
+
+title {
+    text-transform: bold;
+}
+h4 {
+    margin-top: 30px;
+}
