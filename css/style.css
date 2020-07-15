@@ -3,13 +3,12 @@
 }
 
 main {
-    height: 100vh;
     flex-grow: 1;
-
 }
 
+
 img {
-    max-width: 140px;
+    max-width: 70px;
 }
 
 .brand-logo {
@@ -25,4 +24,8 @@ title {
 }
 h4 {
     margin-top: 30px;
+}
+
+.blue-grey-text .secondary-content {
+    max-width: 100px;
 }

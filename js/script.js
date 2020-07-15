@@ -53,7 +53,7 @@ function render() {
     $title.html(videoData.snippet.title);
     $channel.html(videoData.snippet.channelTitle);
     $description.html(videoData.snippet.description);
-    $video.attr(`https://www.youtube.com/watch?v=` + videoData.id.videoId);
+    $video.attr("src", `https://www.youtube.com/watch?v=` + videoData.id.videoId);
     $(".modal").modal();
     // const video = generateModal().join("");
     // $modal.video(video)
