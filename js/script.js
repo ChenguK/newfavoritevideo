@@ -20,12 +20,12 @@ function handleClick(evt) {
     }
 
 $("form").on("submit", getVideos);
+event
 function getVideos(evt) {
-
+    event.preventDefault();
     userInput = $input.val();
     $.ajax({
-        url:baseUrl  + userInput + `&type=video&key=${config.API_KEY1}` 
-        // `${config.API_KEY1}`	
+		url:baseUrl  + userInput + `&type=video&key=${config.API_KEY}` 
     }).then(
         (data)=> { 
             videoData = data.items;
@@ -41,12 +41,12 @@ function getVideos(evt) {
 function generateHTml() { 
     return videoData.map(function(v) {
         return `
-        <li class="collection-item"><div>${v.snippet.title}<a href="#!" class="secondary-content blue-text"><i class="material-icons"><img src=${v.snippet.thumbnails.medium.url} 'data-target="modal1" class="btn modal-trigger'alt="Video Thumbnail"></i></a><br>${v.snippet.channel}
+        <li class="collection-item"><div><b class="grey-darken-text">${v.snippet.title}</b><a href="#myModal" role="button" data-toggle="modal" class="secondary-content blue-text"><i class="material-icons"><img src=${v.snippet.thumbnails.medium.url} "data-target="modal1" class="btn modal-trigger" alt="video thumbnail"></i></a><br>${v.snippet.channelTitle}
         </div>
         </li>`
     })
 }
-{/* <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a> */}
+// <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
 // 'data-target="modal1" class="btn modal-trigger'
 
 function render() {
@@ -67,7 +67,3 @@ function submitForm() {
     $('form[name="contact-form"]').submit();
     $('input[type="text"], textarea').val("");
   }
-
-  
-
-//   append(`<>`)
