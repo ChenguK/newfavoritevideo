@@ -37,7 +37,7 @@ function getVideos(evt) {
 function generateHTml() { 
     return videoData.map(function(v) {
         return `
-        <li class="collection-item"><div><b class="blue-grey-text">${v.snippet.title}</b><a href="#" class="secondary-content blue-text"><i class="material-icons"><img class="modal-trigger" data-target="modal1" src=${v.snippet.thumbnails.medium.url} alt="video thumbnail"></i></a><br>${v.snippet.channelTitle}
+        <li class="collection-item"><div><b class="blue-grey-text">${v.snippet.title}</b><a href="modal1" class="secondary-content"><i class="material-icons"><img data-url="${`https://www.youtube.com/watch?v=` + v.id.videoId}" class="modal-trigger" data-target="modal1" src=${v.snippet.thumbnails.medium.url} alt="video thumbnail"></i></a><br>${v.snippet.channelTitle}
         </div>
         </li>`
     })
@@ -53,7 +53,7 @@ function render() {
     $title.html(videoData.snippet.title);
     $channel.html(videoData.snippet.channelTitle);
     $description.html(videoData.snippet.description);
-    $video.attr(videoData.id + `https://www.youtube.com/watch?v=` + videoId);
+    $video.attr(`https://www.youtube.com/watch?v=` + videoData.id.videoId);
     $(".modal").modal();
     // const video = generateModal().join("");
     // $modal.video(video)
@@ -71,21 +71,24 @@ function submitForm() {
 
 //   $ul.on('click', 'modal', handleModal);
 
-function handleModal(evt) {
-    $modal(evt.target.dataset.url, true);
-}
-$img.on("click", generateModal);
+// function handleModal(evt) {
+//     getmodal(evt.target.dataset.url, true);
+// }
+// // $img.on("click", generateModal);
 
+// $(".modal-trigger").on("click", generateModal)
+$(document).ready(function(){
+  $modal.modal();  
+});
 
-//   function generateModal(evt) {
+// function generateModal(evt) {
 //     $modal.modal();
 //     const instance = M.Modal.getInstance($modal);
-//   }
-
+  
 // $(".modal-trigger").on("click", generateModal)
 // $(document).ready(function(){
     
-//     )};
+// };
 
 
 
