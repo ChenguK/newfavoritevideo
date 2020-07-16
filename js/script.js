@@ -1,4 +1,7 @@
 const baseUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q='
+
+const footerUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&order=viewCount&pageToken=CAoQAA&q='
+
 let videoData, userInput, instance;
 
 const $ul  = $('.collection');
@@ -11,17 +14,13 @@ const $input = $("input[type='text']");
 const $modal = $('.modal');
 const $modalimg = $('.modal-content .modalimg');
 const $imglink = $('#imglink');
+const $footerbtn = $('.button');
 
 $(document).ready(function(){
       $modal.modal();  
      instance = M.Modal.getInstance($modal);
     });
 
-
-    
-    // $modal.on("click", modalimg, function(evt){
-        
-    // })
 
 function handleClick(evt) {
         getVideos(evt.target.dataset.url, true); 
@@ -53,7 +52,7 @@ function getVideos(evt) {
 function generateHTml() { 
     return videoData.map(function(v) {
         return `
-        <li class="collection-item"><div><b class="blue-grey-text">${v.snippet.title}</b><div class="secondary content"><img class="thumbnail" src=${v.snippet.thumbnails.medium.url} alt="video thumbnail"></i><br>${v.snippet.channelTitle}
+        <li class="collection-item"><div><b class="blue-grey-text">${v.snippet.title}</b><div class="secondary content"><img class="thumbnail right" src=${v.snippet.thumbnails.medium.url} alt="video thumbnail"></i><br><b>${v.snippet.channelTitle}<b>
         </div>
         </li>`
     })
@@ -61,7 +60,7 @@ function generateHTml() {
 
 function render() {
     const html = generateHTml().join("");
-    $('h3').html(`Results for${userInput}`);
+    $('h5').html(`Results for ${userInput}`);
     $ul.html(html);
 }
 
@@ -71,28 +70,34 @@ function handleOpenModal(imgsrc){
         return video.snippet.thumbnails.medium.url === imgsrc;
     });
 
-    $(document).ready(function(){
-        $modalimg.find(function() {
-            $imglink.click(function(){
-                open('https://www.youtube.com/watch?v=' + videoObject.id.videoId + 'target=_blank');
-    })
- })
-})
+    $imglink.off();
 
+        $imglink.click(function(){
+            // window.open is 
+            window.open('https://www.youtube.com/watch?v=' + videoObject.id.videoId + 'target=_blank');
+    });
+
+    $footerbtn.click(function() {
+        const footerLink = footerUrl + userInput +`&type=video&key=${config.API_KEY}`
+        render(footerLink);
+    });
+
+
+    
 
     $title.html(videoObject.snippet.title);
     $channel.html(videoObject.snippet.channelTitle);
     $description.html(videoObject.snippet.description);
-    // $video.attr("src", `"https://www.youtube.com/embed/` + videoObject.id.videoId);
     $modalimg.attr("src", videoObject.snippet.thumbnails.high.url);
     $imglink.attr('href', 'https://www.youtube.com/watch?v=' + videoObject.id.videoId + 'id=redirect' + 'target=_blank');
+    // $footerbtn.attr('href', footerUrl)
     instance.open();
 }
 
 function submitForm() {
     $('form[name="contact-form"]').submit();
     $('input[type="text"], textarea').reset("");
-  }
+  };
 
 
 
