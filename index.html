@@ -31,7 +31,7 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" int
             <form>
                 <input type="text" placeholder="Enter Keyword" /><input type="submit" value="Get Videos" />
             </form>
-            <h4 class="results teal-text"></h4>
+            <h5 class="results teal-text"></h5>
             <ul class="collection with-header">
             </ul>
             </section>
@@ -40,20 +40,16 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" int
 <!-- modal structure -->
     <div id="modal1" class="modal">
     <div class="modal-content">
-            <!-- <div class="video-container"> -->
-                <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/ + videoObject.id.videoId + enablejsapi=1&origin=http://example.com" alt="Play Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe> -->
-            <!-- </div> -->
-            <!-- width="480" height="360" -->
-        <img class="modalimg" id=imglink>
-        <h4 id="title"></h4>
+        <img class="modalimg center-align" id=imglink>
+        <h4 class="teal-text" id="title"></h4>
         <p id="channel"></p>
         <br>
-        <p id="description"></p>
+        <p class="right" id="description"></p>
     </div>
     <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
-<footer class="page-footer teal lighten-3 text-right">Next 10 results -> </footer>
+<footer class="page-footer teal lighten-3 text-right"><button class ="teal-text">Next 10 results -> </button></footer>
 </body>
 </html>
