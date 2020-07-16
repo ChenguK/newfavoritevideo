@@ -36,21 +36,19 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" int
             </ul>
             </section>
         </main>
-
-    <!-- video thumbnail is a button triggered by this code 'data-target="modal1" class="btn modal-trigger' -->
-
-    
+ 
 <!-- modal structure -->
     <div id="modal1" class="modal">
     <div class="modal-content">
-            <div class="video-container">
-                <iframe width="853" height="480" src="https://www.youtube.com/embed/ + videoObject.id.videoId" alt="Play Video" frameborder="0" allowfullscreen></iframe>
-            </div>
+            <!-- <div class="video-container"> -->
+                <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/ + videoObject.id.videoId + enablejsapi=1&origin=http://example.com" alt="Play Video" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"  allowfullscreen></iframe> -->
+            <!-- </div> -->
+            <!-- width="480" height="360" -->
+        <img class="modalimg" id=imglink>
         <h4 id="title"></h4>
-        <p classes="right" id="description"></p>
-        <br>
         <p id="channel"></p>
-        
+        <br>
+        <p id="description"></p>
     </div>
     <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
