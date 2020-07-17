@@ -21,7 +21,7 @@ To install:
 
 # Wireframes
 
-![Wireframe1](./images/Wireframe1.md)
+![Wireframe1](./images/Cookies%20Error.png)
 
 ![https://imgur.com/FgF7Ryz]                      
 
