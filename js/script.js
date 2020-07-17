@@ -35,7 +35,7 @@ function getVideos(evt) {
     event.preventDefault();
     userInput = $input.val();
     $.ajax({
-        url:`https://project1-629.herokuapp.com/chengu?search=${userInput}`,
+        url:`https://project1-629.herokuapp.com/Chengu?search=${userInput}`,
     }).then(
         (data)=> { 
             videoData = data.items;
