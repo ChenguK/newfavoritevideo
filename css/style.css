@@ -1,9 +1,10 @@
 * {
-    box-sizing: border-box;   
+    box-sizing: border-box;  
 }
 
 main {
     flex-grow: 1;
+
 }
 
 .brand-logo{
@@ -12,6 +13,7 @@ main {
 
 .thumbnail {
     max-width: 70px;
+    margin-block-end: auto;
 }
 
 .brand-logo {
@@ -22,22 +24,15 @@ form {
     margin-top: 70px;
 }
 
-/* .modal {
-    justify-content: center;
-} */
-
 title {
     text-transform: bold;
+    word-wrap: normal;
 }
 h5 {
     margin-top: 30px;
 }
 
 .modalimg {
-    margin: auto;
+    margin-left: 100px;
+    height: 340px;
 }
-
-.modal-content #channel {
-    text-transform: bold;
-}
-

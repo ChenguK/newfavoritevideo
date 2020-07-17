@@ -29,10 +29,11 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" int
     <main class="container">
         <section class="container">
             <form>
-                <input type="text" placeholder="Enter Keyword" /><input type="submit" value="Get Videos" />
+                <input type="text" name="server" id="saveServer" placeholder="Enter Keyword" /><input type="submit" value="Get Videos" />
             </form>
             <h5 class="results teal-text"></h5>
-            <ul class="collection with-header">
+            <!-- ul class only displays videos with  -->
+            <ul class="collection with-header col s100">
             </ul>
             </section>
         </main>
@@ -40,16 +41,15 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" int
 <!-- modal structure -->
     <div id="modal1" class="modal">
     <div class="modal-content">
-        <img class="modalimg center-align" id=imglink>
+        <img class="modalimg center hoverable" id=imglink>
         <h4 class="teal-text" id="title"></h4>
         <p id="channel"></p>
-        <br>
         <p class="right" id="description"></p>
     </div>
     <div class="modal-footer">
         <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
     </div>
 </div>
-<footer class="page-footer teal lighten-3 text-right"><button class ="teal-text">Next 10 results -> </button></footer>
+<footer class="page-footer teal lighten-3 text-right">     </footer>
 </body>
 </html>
