@@ -6,8 +6,11 @@ main {
     flex-grow: 1;
 }
 
+.brand-logo{
+    margin-left: 50px;
+}
 
-img {
+.thumbnail {
     max-width: 70px;
 }
 
@@ -19,13 +22,22 @@ form {
     margin-top: 70px;
 }
 
+/* .modal {
+    justify-content: center;
+} */
+
 title {
     text-transform: bold;
 }
-h4 {
+h5 {
     margin-top: 30px;
 }
 
-/* .blue-grey-text .secondary-content {
-    max-width: 100px;
-} */
+.modalimg {
+    margin: auto;
+}
+
+.modal-content #channel {
+    text-transform: bold;
+}
+
