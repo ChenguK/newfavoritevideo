@@ -71,10 +71,17 @@ I responded by saying that it actually was stopping the video from playing, but 
 
 ![Reply Email to Youtube](./images/Reply-email.png)
 
-
 As you can see in the above wireframes, I also tried to add a 'next 10 results button.' The intention was for the page to repopulate with the next 10 results from this search. It would require a second Ajax request with a 'nextPageToken' that was renewed by the Youtube API v3 after every search. 
 
 I wrote the code to create this action and ended up with a 'CORS' error. I got this error at the end of the last project day. I would rather have a project that met all requirements with a few extra features and a nice layout, rather than to chase down one more extra feature. I decided that there just wasn't time to figure the error out and worked on making it the nicest looking site I could using Materialize, Bootstrap and CSS.
+
+# Future Enhancements
+
+In the future, I would like to do the things I set out to do: 
+
+* Get the video for each link to play in the modal
+* Have a working button where the user can repopulate the list with the next 10 results
+* To add on: I would like to have a button where the user, having clicked over to the next page of results, can click back to the previous results so they do not have to search for a keyword again to see the first page of results again.
 
 # Authors
 * Chengusoyane Kargbo - *Initial work* - [ChenguK](https://github.com/ChenguK)
