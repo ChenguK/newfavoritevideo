@@ -1,6 +1,6 @@
 const baseUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q='
-
-const footerUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&order=viewCount&pageToken='
+//code for the attempted second ajax request
+// const footerUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&order=viewCount&pageToken='
 
 let videoData, userInput, instance, nextPageToken;
 
@@ -9,6 +9,7 @@ const $title = $('#title');
 const $channel = $('#channel');
 const $description = $('#description');
 const $img = $('img');
+//declaration for the attempted embeded videos
 // const $video = $('.modal-content .video-container');
 const $input = $("input[type='text']");
 const $modal = $('.modal');
@@ -23,7 +24,7 @@ $(document).ready(function(){
 function handleClick(evt) {
         getVideos(evt.target.dataset.url, true); 
     }
-
+// when the user clicks the img, run
 $ul.on("click", "img", function(evt){
     handleOpenModal(evt.target.src);
     render();
@@ -38,7 +39,7 @@ function getVideos(evt) {
     }).then(
         (data)=> { 
             videoData = data.items;
-            // console.log(data);
+            console.log(data);
 			render();
         }, 
         (error) => { 
@@ -89,7 +90,8 @@ function handleOpenModal(imgsrc){
 
 function submitForm() {
     $('form[name="contact-form"]').submit();
-    $('input[type="text"], textarea').reset("");
+    $input.reset("");
   };
+  
 
   localStorage.setItem("server", $input);

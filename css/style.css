@@ -2,9 +2,14 @@
     box-sizing: border-box;  
 }
 
-main {
-    flex-grow: 1;
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
 
+main {
+    flex: 1 0 auto;
 }
 
 .brand-logo{
@@ -35,4 +40,12 @@ h5 {
 .modalimg {
     margin-left: 100px;
     height: 340px;
+}
+
+.pagefooter {
+    padding: 90px;
+
+}
+#channel {
+    text-decoration: underline;
 }
