@@ -4,7 +4,7 @@ I have created an app where you can look for your new favorite video. Using the 
 
 # Getting Started
 
-To create this app, I used the wireframes (pictured below) as a guide for what I thought was possible in this framework. I laid out my page using Materialize to built the skeleton of the idea.
+To create this app, I used the wireframes (pictured below) as a guide for what I thought was possible in this framework. I laid out my page using Materialize to build the skeleton of the idea.
 
 
 # Installation Instructions
