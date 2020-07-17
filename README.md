@@ -84,6 +84,7 @@ In the future, I would like to do the things I set out to do:
 * Get the video for each link to play in the modal
 * Have a working button where the user can repopulate the list with the next 10 results
 * To add on: I would like to have a button where the user, having clicked over to the next page of results, can click back to the previous results so they do not have to search for a keyword again to see the first page of results again.
+* I would also like to expand the local storage so that the user can click to save each video as they wish to create a playlist that will play within the modal.
 
 # Authors
 * Chengusoyane Kargbo - *Initial work* - [ChenguK](https://github.com/ChenguK)
