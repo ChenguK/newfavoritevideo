@@ -40,14 +40,14 @@ To install:
 
 
 # Technologies
-*HTML    
-*CSS     
-*JavaScript    	
-*Ajax	 
-*jQuery      
-*Bootstrap    
-*Materialize	      
-*Youtube Data Api v3
+* HTML    
+* CSS     
+* JavaScript    	
+* Ajax	 
+* jQuery      
+* Bootstrap    
+* Materialize	      
+* Youtube Data Api v3
 
 
 # Unsolved Problems
