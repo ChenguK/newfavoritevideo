@@ -21,7 +21,7 @@ To install:
 
 # Wireframes
 
-![Wireframe1](https://imgur.com/FgF7Ryz)
+![Wireframe1](./images/Wireframe1.md)
 
 ![https://imgur.com/FgF7Ryz]                      
 
