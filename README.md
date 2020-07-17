@@ -43,11 +43,11 @@ To install:
 
 HTML    
 CSS     
-JavaScript	
-Ajax	
-jQuery  
-Bootstrap   
-Materialize	
+JavaScript    	
+Ajax	 
+jQuery      
+Bootstrap    
+Materialize	      
 Youtube Data Api v3
 
 
