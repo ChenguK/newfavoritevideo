@@ -53,7 +53,7 @@ Youtube Data Api v3
 
 # Unsolved Problems
 
-As you can see in the above wireframes, I originally had a different intention for the modals. Originally the video that was attached to each link was supposed to play in the modal. 
+1. As you can see in the above wireframes, I originally had a different intention for the modals. Originally the video that was attached to each link was supposed to play in the modal. 
 
 However after embedding the videos, I got this warning saying that chrome had changed the way they were addressing and sending cookies everytime. It blocked my ability to play the video in the modal.
 
@@ -71,9 +71,11 @@ I responded by saying that it actually was stopping the video from playing, but 
 
 ![Reply Email to Youtube](./images/Reply-email.png)
 
-As you can see in the above wireframes, I also tried to add a 'next 10 results button.' The intention was for the page to repopulate with the next 10 results from this search. It would require a second Ajax request with a 'nextPageToken' that was renewed by the Youtube API v3 after every search. 
+2. As you can see in the above wireframes, I also tried to add a 'next 10 results button.' The intention was for the page to repopulate with the next 10 results from this search. It would require a second Ajax request with a 'nextPageToken' that was renewed by the Youtube API v3 after every search. 
 
 I wrote the code to create this action and ended up with a 'CORS' error. I got this error at the end of the last project day. I would rather have a project that met all requirements with a few extra features and a nice layout, rather than to chase down one more extra feature. I decided that there just wasn't time to figure the error out and worked on making it the nicest looking site I could using Materialize, Bootstrap and CSS.
+
+3. When opening a modal, you can see that the description for the video is on the top section and on the footer. With a little bit more time, I would have been able to figure that out and adjust the code so that all of the description was either on the top section or for the whole modal to be a flat section so all of the elements were on the same plane.
 
 # Future Enhancements
 
