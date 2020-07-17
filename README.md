@@ -1,6 +1,6 @@
 # Your New Favorite Video
 
-I have created an app where you can look for your new favorite video. Using the search bar on top, enter a keyword you would like to search. Hit enter or lick "Get Videos" and you will see a list of Youtube videos matching your keyword appear. Click on any of the images and a modal appears with a larger picture of the videos thumbnail with the title, channel name and a description of the video below. You can click the image to open the video in another window or click off the modal to choose a different video. You can also search a different video. Previous searches will kept in local storage to search again if needed.
+I have created an app where you can look for your new favorite video. Using the search bar on top, enter a keyword you would like to search. Hit enter or click "Get Videos" and you will see a list of Youtube videos matching your keyword appear. Click on any of the images and a modal appears with a larger picture of the videos thumbnail with the title, channel name and a description of the video below. You can click the image to open the video in another window or click off the modal to choose a different video. You can also search a different video. Previous searches will kept in local storage to search again if needed.
 
 # Getting Started
 
