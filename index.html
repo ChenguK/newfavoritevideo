@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link rel="stylesheet" href="css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script defer src="./js/config.js"></script>
+    <script defer src="./js/script.js"></script>
+    <title>Your New Favorite Video</title>
+</head>
+<body>
+<!-- 
+    <h1>Your New Favorite Video</h1> -->
+    <nav>
+        <div class="nav-wrapper teal lighten-3">
+            <a href="#" class="brand-logo center">Your New Favorite Video</a>
+        </div>
+    </nav>
+    <main class="container">
+        <section class="container">
+            <form>
+                <input type="text" name="server" id="saveServer" placeholder="Enter Keyword" /><input type="submit" value="Get Videos" />
+            </form>
+            <h5 class="results teal-text"></h5>
+            <!-- ul class only displays videos with  -->
+            <ul class="collection with-header col s100">
+            </ul>
+            </section>
+        </main>
+ 
+<!-- modal structure -->
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+        <img class="modalimg center hoverable" id=imglink>
+        <h4 class="teal-text" id="title"></h4>
+        <p id="channel"></p>
+        <p class="right" id="description"></p>
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat tall">Close</a>
+    </div>
+</div>
+<footer class="page-footer teal lighten-3 text-right">     </footer>
+</body>
+</html>
