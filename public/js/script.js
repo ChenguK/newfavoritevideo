@@ -1,7 +1,7 @@
 const baseUrl = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&q='
 
 let videoData, userInput, instance, nextPageToken;
-let playHistory = JSON.parse(sessionStorage.getItem('playHistory')) || [];
+let playHistory = [];
 
 const $ul  = $('.collection');
 const $title = $('#title');
@@ -60,6 +60,7 @@ $("form").on("submit", getVideos);
 function getVideos(evt) {
     evt.preventDefault();
     userInput = $input.val();
+    localStorage.setItem('lastSearch', userInput);
     $.ajax({
         url:`/api/search?search=${userInput}`,
     }).then(
@@ -255,5 +256,13 @@ function renderHistory() {
 
   
 
-  localStorage.setItem("server", $input);
+//   localStorage.setItem("server", $input);
+document.addEventListener('DOMContentLoaded', function() {
+    const savedInput = localStorage.getItem('lastSearch');
+
+    if (savedInput) {
+        $input.val(savedInput);
+    }
+});
+
 
