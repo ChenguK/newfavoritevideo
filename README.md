@@ -21,9 +21,9 @@ To install:
 
 # Wireframes
 
-![Wireframe 1](./images/Wireframe1.png)
+![Wireframe 1](./public/images/Wireframe1.png)
 
-![Wireframe 2](./images/Wireframe2.png)                 
+![Wireframe 2](./public/images/Wireframe2.png)                 
 
 # App Screenshots
 
