@@ -14,28 +14,58 @@ href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" int
     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script defer src="./js/config.js"></script>
     <script defer src="./js/script.js"></script>
     <title>Your New Favorite Video</title>
 </head>
 <body>
-<!-- 
-    <h1>Your New Favorite Video</h1> -->
+
     <nav>
         <div class="nav-wrapper teal lighten-3">
-            <a href="#" class="brand-logo center">Your New Favorite Video</a>
+            <!-- <a href="#" class="brand-logo center">Your New Favorite Video</a> -->
         </div>
     </nav>
     <main class="container">
-        <section class="container">
-            <form>
-                <input type="text" name="server" id="saveServer" placeholder="Enter Keyword" /><input type="submit" value="Get Videos" />
+        <h1 class="hero-title center blue-grey-text">What would you like to watch?</h1>
+        <section class="hero-section">
+            <form class="search-form">
+                <input type="text" name="server" placeholder="Enter Keywords..." />
+               <button type="submit">Search</button>
             </form>
-            <h5 class="results teal-text"></h5>
+
+            <div class="hero-image">
+                    <!-- illustration stays here initially -->
+                <div class="hero-illustration">
+                    <img src="images/watchimage2.jpeg" alt="search illustration">
+                            
+                </div>
+            </div>
+            <div class="hero-media hidden">
+                <div class="video-area">
+                
+                    <div class="hero-video">
+                        <iframe id="videoPlayer"
+                                frameborder="0"
+                                allowfullscreen>
+                        </iframe>
+
+                        <h4 id="hero-video-title" class="teal-text center"></h4>
+                        <h5 id="hero-video-channel" class="teal-text center"></h5>
+
+                    </div>
+                
+                </div>
+                <div class="history-section hidden">
+                    <h6 class="teal-text">Recently Played</h6>
+                    <ul class="history-list"></ul>
+                </div>
+            </div>            
+         </section>
+           
+
+            <h6 class="results teal-text"></h6>
             <!-- ul class only displays videos with  -->
-            <ul class="collection with-header col s100">
+            <ul class="collection with-header teal-text">
             </ul>
-            </section>
         </main>
  
 <!-- modal structure -->
