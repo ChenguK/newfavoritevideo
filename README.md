@@ -27,16 +27,16 @@ To install:
 
 # App Screenshots
 
-![Screenshot of finished app on home screen](./images/Screenshot%203.png)
+![Screenshot of finished app on home screen](./public/images/Screenshot%203.png)
 
-![Screenshot of finished app after search](./images/Screenshot1.png)
+![Screenshot of finished app after search](./public/images/Screenshot1.png)
 
-![Screenshot of app with modal](./images/Screenshot2.png)
+![Screenshot of app with modal](./public/images/Screenshot2.png)
 
 
 # Live Site
 
-[Click here](https://chenguk.github.io/newfavoritevideo/)  to open app in browser.
+[Click here](https://newfavoritevideo.onrender.com/)  to open app in browser.
 
 
 # Technologies
@@ -56,19 +56,19 @@ To install:
 
 However after embedding the videos, I got this warning saying that chrome had changed the way they were addressing and sending cookies everytime. It blocked my ability to play the video in the modal.
 
-![Cookies Error](./images/Cookies%20Error.png)
+![Cookies Error](./public/images/Cookies%20Error.png)
 
 I tried to find a way around it by responding to the cookies in my code. But no matter what I did, I kept getting the same response. Through hours of research, I found that I actually couldn't address this issue and only Youtube updating their servers would fix it. So I emailed them as a Hail Mary that maybe they could help.
 
-![Youtube Request](./images/Youtube-request.png)
+![Youtube Request](./public/images/Youtube-request.png)
 
 They responded by saying that it was just a warning and should not keep the video from playing.
 
-![Youtube's reply](./images/Youtubes-reply.png)
+![Youtube's reply](./public/images/Youtubes-reply.png)
 
 I responded by saying that it actually was stopping the video from playing, but that I had already written new code to allow an image in the modal to open the video in a new window so I was fine without it.	
 
-![Reply Email to Youtube](./images/Reply-email.png)
+![Reply Email to Youtube](./public/images/Reply-email.png)
 
 2. As you can see in the above wireframes, I also tried to add a 'next 10 results button.' The intention was for the page to repopulate with the next 10 results from this search. It would require a second Ajax request with a 'nextPageToken' that was renewed by the Youtube API v3 after every search. 
 
