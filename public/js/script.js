@@ -37,6 +37,7 @@ function playVideo(videoId) {
 })
 };
 
+localStorage.removeItem('playHistory');
 
 
 $(document).ready(function(){
