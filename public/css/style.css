@@ -21,6 +21,8 @@ main {
 .hero-title {
     margin: 50px 0px -50px 0;
     font-size: 5rem;
+    transition: all 0.4s ease;
+
 
 }
 

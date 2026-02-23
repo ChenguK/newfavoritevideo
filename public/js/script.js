@@ -255,5 +255,4 @@ function renderHistory() {
   
 
   localStorage.setItem("server", $input);
-  sessionStorage.setItem('playHistory', JSON.stringify(playHistory));
 
