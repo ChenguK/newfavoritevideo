@@ -256,13 +256,4 @@ function renderHistory() {
 
   
 
-//   localStorage.setItem("server", $input);
-document.addEventListener('DOMContentLoaded', function() {
-    const savedInput = localStorage.getItem('lastSearch');
-
-    if (savedInput) {
-        $input.val(savedInput);
-    }
-});
-
-
+  localStorage.setItem("server", $input);
