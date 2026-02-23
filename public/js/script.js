@@ -18,8 +18,6 @@ const resultsList = document.querySelector(".results-list");
 function playVideo(videoId) {
 
     const iframe = document.getElementById("videoPlayer");
-    // const p = document.getElementById("player-channel");
-
 
     iframe.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
 
@@ -31,8 +29,6 @@ function playVideo(videoId) {
 
     // Make sure video wrapper is visible
     document.querySelector(".hero-video").classList.remove("hidden");
-    // document.querySelector("#player-channel").classList.remove("hidden");
-
 
     // Scroll to top smoothly
     window.scrollTo({
@@ -159,11 +155,9 @@ function handleOpenModal(imgsrc){
         channel: videoObject.snippet.channelTitle
 };
 
-
 form.addEventListener("submit", async (e) => {
     e.preventDefault();
 
-    // fetch logic here
 });
 
 
