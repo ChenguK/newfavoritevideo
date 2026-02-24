@@ -6,7 +6,7 @@ This project began as a front-end search experience and evolved into a deployed 
 
 🔗 Live App: [link here](https://newfavoritevideo.onrender.com)
 
-🔗 Technical Deep Dive: TECHNICAL_OVERVIEW.md
+🔗 Technical Deep Dive: [TECHNICAL_OVERVIEW.md](https://github.com/ChenguK/newfavoritevideo/blob/master/TECHNICAL_OVERVIEW.md)
 
 
 ## ✨ What It Does
