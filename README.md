@@ -87,4 +87,4 @@ This project began as a front-end search experience and evolved into a deployed 
 - Expand filtering/sorting options
 
 ## Authors
-* Chengusoyane Kargbo - *Initial work* - [ChenguK](https://github.com/ChenguK)
+* Chengusoyane Kargbo - [GitHub Profile](https://github.com/ChenguK) - [Email](mailto:ChenguKargbo@gmail.com)
