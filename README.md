@@ -23,6 +23,8 @@ This project began as a front-end search experience and evolved into a deployed 
 
 - Responsive layout for desktop and mobile
 
+![Architectural Diagram](./public/images/Architectural-Diagram.png)
+
 
 
 ## 🛠 Tech Stack
