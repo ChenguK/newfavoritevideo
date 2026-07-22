@@ -4,7 +4,7 @@ A full-stack video search application that helps users discover content through 
 
 This project began as a front-end search experience and evolved into a deployed full-stack application with a backend proxy, improved state management, and refined UI behavior.
 
-🔗 Live App: [link here](https://newfavoritevideo.onrender.com)
+🔗 Live Demo: [link here](https://newfavoritevideo.netlify.app)
 
 🔗 Technical Deep Dive: [TECHNICAL_OVERVIEW.md](https://github.com/ChenguK/newfavoritevideo/blob/master/TECHNICAL_OVERVIEW.md)
 
@@ -22,6 +22,8 @@ This project began as a front-end search experience and evolved into a deployed 
 - Maintain a session-based “Recently Played” list
 
 - Responsive layout for desktop and mobile
+
+![Architectural Diagram](./public/images/Architectural-Diagram.png)
 
 
 
